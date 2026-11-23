@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Privacy Policy for ClipForge ShortDesk.">
+  <title>Privacy Policy | ClipForge ShortDesk</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="header wrap">
+    <a class="brand" href="../"><span class="mark" aria-hidden="true"></span>ClipForge ShortDesk</a>
+    <nav aria-label="Main navigation">
+      <a href="../terms/">Terms of Service</a>
+      <a href="../privacy/" aria-current="page">Privacy Policy</a>
+    </nav>
+  </header>
+  <main id="main" class="wrap legal">
+    <h1>Privacy Policy</h1>
+    <p class="date">Last updated <time datetime="2026-11-23">November 23, 2026</time></p>
+    <p class="intro">This policy explains how the ClipForge ShortDesk desktop tool handles data and what happens when you visit this website.</p>
+    <section><h2>YouTube authorization</h2><p>When you connect YouTube, ShortDesk opens Google's OAuth consent flow and exchanges the returned authorization code with Google. It requests upload and read-only YouTube permissions to verify the channel and check uploads. It receives an access token, a refresh token, and expiration information, and checks the channel ID against the configured channel.</p><p>The access token authorizes YouTube API requests. ShortDesk uses the refresh token to obtain a new access token when the current one is close to expiry or authentication needs refreshing. It keeps these credentials, the channel ID and handle, and the OAuth client identifier in a local authorization file.</p></section>
+    <section><h2>Instagram authorization</h2><p>ShortDesk reads a Meta-issued access token from a local file chosen by the user or imports it into a managed local file. Importing leaves the original token file in place. ShortDesk uses the token to check the assigned Instagram account ID and username, permissions and eligibility, and to authorize requests to Meta. The Instagram adapter does not perform an OAuth code exchange or refresh this token. A replacement token must be provided when required.</p></section>
+    <section><h2>Device storage and publication records</h2><p>ShortDesk keeps its SQLite database in the local ShortDesk workspace on your device. It records file paths and fingerprints, queue times, titles, descriptions and hashtags, processing and retry status, and returned publication IDs and timestamps. The adapters can also retain upload checkpoints and identifiers such as YouTube video IDs and Instagram container and media IDs. Publication records support status checks and duplicate prevention.</p><p>Credentials are stored outside SQLite in local files. ShortDesk uses restricted file permissions for the credential files it manages. User-supplied credential files and any copies you make remain on your device at the locations you choose.</p></section>
+    <section><h2>Information sent to platforms</h2><p>For a real upload, ShortDesk sends the selected video and the metadata or settings needed by the destination to Google for YouTube or Meta for Instagram. It also sends authorization and account or publication identifiers to the appropriate platform to verify the account, create uploads, and check status. Google and Meta handle received data under their respective policies. This website does not receive ShortDesk credentials, queue records, or video files.</p></section>
+    <section><h2>Retention, disconnection, and deletion</h2><p>ShortDesk sets no fixed automatic expiry for its local credentials, queue records, publication history, or upload checkpoints. Those records can remain after authorization expires. Platform copies are subject to the platform's own retention and deletion practices.</p><p>To disconnect, stop real publishing for that platform and revoke the grant or disable the token through Google or Meta. With ShortDesk stopped, remove the relevant local credential files, any original imported copy you no longer need, and the related settings. Removing local credentials does not remove already uploaded posts.</p><p>To clear local queue and publication records, close ShortDesk and remove the relevant local ShortDesk workspace and any separate adapter upload records or exports you want to delete. Removing a workspace can also remove its local media copies and duplicate history. Manage posts already uploaded through the destination platform.</p></section>
+    <section><h2>Website hosting and contact</h2><p>This informational site has no account login, forms, analytics scripts, or embedded platform widgets. GitHub Pages logs visitor IP addresses for security under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p><p>If you email <a href="mailto:kontentzavod0@gmail.com">kontentzavod0@gmail.com</a> with a question or deletion request, we use your email address and message to respond and retain the correspondence as needed to handle the request. We can assist with identifying local data, but cannot erase files from your device or delete platform copies on your behalf. Please do not send tokens, passwords, or database files.</p></section>
+    <section><h2>Planned TikTok integration</h2><p>TikTok account authorization and Content Posting API uploads are planned. ShortDesk does not currently obtain TikTok OAuth tokens, store TikTok account or post identifiers from the TikTok API, or send media to TikTok. This policy will be updated before a TikTok integration is made available.</p></section>
+  </main>
+  <footer class="footer wrap">
+    <span>ClipForge ShortDesk</span>
+    <a href="mailto:kontentzavod0@gmail.com">Contact</a>
+  </footer>
+</body>
+</html>
